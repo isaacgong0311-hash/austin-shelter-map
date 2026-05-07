@@ -1,4 +1,4 @@
-import type { Shelter, FilterType } from './types'
+import type { Shelter } from './types'
 
 // Returns Leaflet marker color based on availability percentage
 export function getMarkerColor(shelter: Shelter): 'green' | 'yellow' | 'red' | 'gray' {

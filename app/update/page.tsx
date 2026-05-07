@@ -20,7 +20,7 @@ export default async function UpdatePage() {
         <div className="bg-gray-900 rounded-2xl p-8 max-w-sm w-full text-center">
           <h1 className="text-xl font-bold mb-2">Account not set up</h1>
           <p className="text-gray-400 text-sm">
-            Your account hasn't been linked to a shelter yet. Contact the admin to get set up.
+            Your account hasn&apos;t been linked to a shelter yet. Contact the admin to get set up.
           </p>
         </div>
       </div>

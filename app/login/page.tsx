@@ -48,7 +48,7 @@ export default function LoginPage() {
       <div className="bg-gray-900 rounded-2xl p-8 max-w-sm w-full">
         <h1 className="text-2xl font-bold mb-1">Shelter Staff Login</h1>
         <p className="text-gray-400 text-sm mb-6">
-          Enter your email. We'll send you a login link — no password needed.
+          Enter your email. We&apos;ll send you a login link — no password needed.
         </p>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">

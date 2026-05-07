@@ -38,7 +38,7 @@ export default function Map({ shelters, filter }: Props) {
 
       // Remove existing markers
       map.eachLayer((layer) => {
-        if ((layer as any)._isMarker) map.removeLayer(layer)
+        if ((layer as unknown as { _isMarker?: boolean })._isMarker) map.removeLayer(layer)
       })
 
       shelters.forEach((shelter) => {
@@ -64,7 +64,7 @@ export default function Map({ shelters, filter }: Props) {
         })
 
         const marker = L.marker([shelter.lat, shelter.lng], { icon })
-        ;(marker as any)._isMarker = true
+        ;(marker as unknown as { _isMarker: boolean })._isMarker = true
 
         const timeText = stale
           ? `⚠️ ${formatTimeAgo(shelter.updated_at)} — may be outdated`
