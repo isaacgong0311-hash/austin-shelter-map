@@ -22,7 +22,6 @@ export default function ShelterList({ shelters, filter, onSelect, selected }: Pr
     return sum + beds
   }, 0)
 
-  const totalBeds = shelters.reduce((sum, s) => sum + s.total_beds, 0)
   const activeShelters = shelters.filter(s => !isStale(s) && s.available_beds !== null).length
 
   return (
